@@ -54,8 +54,8 @@ Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [ccbc-tax-calculator]
-    cd [ccbc-tax-calculator]
+    git clone https://github.com/MarcosJunior01/CCBC-TAXAS.git
+    cd ccbc-tax-calculator
     ```
 2.  **Instale as dependências:**
     ```bash
