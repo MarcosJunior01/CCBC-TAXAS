@@ -1,0 +1,51 @@
+.products-card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.products-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.products-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.products-card li {
+  margin-bottom: 1rem;
+}
+
+.product-label {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.bar-wrapper {
+  background-color: #eee;
+  border-radius: 6px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  transition: width 0.4s ease-in-out;
+}
+
+.percent {
+  position: absolute;
+  right: 8px;
+  font-size: 0.75rem;
+  color: #555;
+}

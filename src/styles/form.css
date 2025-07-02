@@ -1,0 +1,40 @@
+.export-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  
+}
+
+.export-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #222;
+  max-width: 500px;
+}
+
+.export-form input,
+.export-form select {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fefefe;
+  max-width: 500px;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background-color: #0057a3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #004080;
+}

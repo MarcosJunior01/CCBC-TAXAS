@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Simulador de Exportação Brasil-Canadá
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de portfólio desenvolvido para simular e visualizar dados relevantes sobre as exportações entre o Brasil e o Canadá. O objetivo é demonstrar habilidades em desenvolvimento web, análise de dados e criação de interfaces interativas, oferecendo uma ferramenta prática para explorar o cenário do comércio bilateral.
 
-## Available Scripts
+## Visão Geral do Projeto
 
-In the project directory, you can run:
+O Simulador de Exportação Brasil-Canadá permite aos usuários:
 
-### `npm start`
+* **Simular Custos de Exportação:** Calcule estimativas de frete, taxas alfandegárias e ICMS com base em detalhes da mercadoria, modal de transporte e rotas específicas.
+* **Visualizar Tendências de Mercado:** Acesse informações atualizadas sobre a taxa de câmbio CAD/BRL e o crescimento das exportações.
+* **Explorar Top 5 Produtos Exportados:** Veja os principais produtos que o Brasil exporta para o Canadá, com seus respectivos percentuais de representatividade.
+* **Analisar Histórico de Exportações:** Visualize o volume de exportações anuais entre 2021 e 2024.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este projeto foi construído com as seguintes tecnologias:
 
-### `npm test`
+* **React.js:** Biblioteca JavaScript para construção da interface do usuário.
+* **Charts.js:** Biblioteca JavaScript para a criação dos gráficos interativos e visualização de dados.
+* **HTML/CSS:** Estrutura e estilização da aplicação.
+* **JavaScript:** Lógica de programação e manipulação de dados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Funcionalidades Detalhadas
 
-### `npm run build`
+### Formulário de Simulação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Valor da Exportação:** Campo para inserir o valor total da mercadoria em Reais (R$).
+* **Tipo de Mercadoria:** Seleção entre diferentes categorias de produtos (e.g., Industrial).
+* **Modal de Transporte:** Escolha entre modalidades como Aéreo, Marítimo, etc.
+* **Cidades de Origem e Destino:** Seleção de cidades brasileiras (origem) e canadenses (destino), com exemplos como São Paulo (GRU) e Toronto (YYZ).
+* **Quantidade de Volumes:** Definição do número de volumes a serem exportados.
+* **Botão "Calcular Custos":** Aciona o cálculo e exibe o resumo dos custos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Resumo de Custos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Após a simulação, são exibidos os detalhes de custo:
 
-### `npm run eject`
+* **Distância Estimada:** Em quilômetros.
+* **Frete Estimado:** Valor aproximado do transporte.
+* **Taxa Alfandegária:** Valor da taxa aduaneira.
+* **Taxa ICMS:** Imposto sobre Circulação de Mercadorias e Serviços.
+* **Total Estimado:** Custo total aproximado da exportação.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Dados de Mercado
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **Cotação CAD/BRL:** Exibe a cotação atual e a variação percentual da moeda canadense em relação ao real brasileiro nos últimos 6 meses.
+* **Exportações 2025 (Primeiro Trimestre):** Valor total das exportações brasileiras para o Canadá no primeiro trimestre de 2025 e seu crescimento percentual em relação ao ano anterior.
+* **Top 5 Exportações Brasil-Canadá:** Gráfico de barras detalhando os 5 principais produtos exportados por valor percentual.
+* **Histórico de Exportações (2021-2024):** Gráfico de barras mostrando a evolução anual das exportações em bilhões de USD.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Como Executar o Projeto Localmente
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
-## Learn More
+1.  **Clone o repositório:**
+    ```bash
+    git clone [ccbc-tax-calculator]
+    cd [ccbc-tax-calculator]
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
+    O aplicativo será aberto automaticamente no seu navegador em `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contribuição
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias, novas funcionalidades ou correção de bugs.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
